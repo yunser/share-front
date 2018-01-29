@@ -1,14 +1,8 @@
 <template>
-    <div class="page-about">
-        <ui-header></ui-header>
-        <main class="page-body">
-            <div class="container">
-                <div>这是关于页面</div>
-                <div>版本：{{ version }}</div>
-            </div>
-        </main>
-        <ui-footer></ui-footer>
-    </div>
+    <my-page title="关于">
+        <div>这是关于页面</div>
+        <div>版本：{{ version }}</div>
+    </my-page>
 </template>
 
 <script>

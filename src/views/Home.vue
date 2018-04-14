@@ -20,6 +20,7 @@
     export default {
         data () {
             return {
+                text: '',
                 page: {
                     menu: [
                         {
@@ -32,6 +33,7 @@
             }
         },
         mounted() {
+            this.initWebIntents()
             window._bd_share_config = {
                 "common": {
                     "bdSnsKey": {
@@ -50,6 +52,14 @@
             };
             let elem = document.getElementsByTagName('head')[0]
             elem.appendChild(document.createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=86835285.js?cdnversion=' + (new Date().getTime() / 36e5)
+        },
+        methods: {
+            initWebIntents() {
+                if (!window.intent) {
+                    return
+                }
+                this.text = window.intent.data
+            }
         }
     }
 </script>

@@ -1,0 +1,35 @@
+.share_weixin {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    margin-left: -121px;
+    padding: 10px 20px;
+    width: 200px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    text-align: center
+}
+
+.share_weixin .qrcode {
+    margin: 10px 0
+}
+
+.popup_close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-size: 20px
+}
+
+.full_screen_bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #f1f1f1;
+    background: rgba(0, 0, 0, 0.39)
+}

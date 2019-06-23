@@ -1,16 +1,18 @@
 <template>
     <my-page title="分享">
-        <div class="span five bdsharebuttonbox">
-            <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-            <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-            <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
-            <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
-            <a href="#" class="bds_bdhome" data-cmd="bdhome" title="分享到百度新首页"></a>
-            <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
-            <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
-            <a href="#" class="bds_more" data-cmd="more"></a>
-            <!--<a class="bds_count" data-cmd="count"></a>-->
+        <div class="common-container container">
+            <div class="span five bdsharebuttonbox">
+                <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+                <a href="#" class="bds_bdhome" data-cmd="bdhome" title="分享到百度新首页"></a>
+                <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+                <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                <a href="#" class="bds_more" data-cmd="more"></a>
+                <!--<a class="bds_count" data-cmd="count"></a>-->
+            </div>
         </div>
     </my-page>
 </template>
@@ -51,7 +53,7 @@
                 //"image": {"viewList": ["tsina", "tqq", "qzone", "renren"], "viewText": "分享云设工具到：", "viewSize": "16"}
             };
             let elem = document.getElementsByTagName('head')[0]
-            elem.appendChild(document.createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=86835285.js?cdnversion=' + (new Date().getTime() / 36e5)
+            elem.appendChild(document.createElement('script')).src = 'https://bdimg.share.baidu.com/static/api/js/share.js?v=86835285.js?cdnversion=' + (new Date().getTime() / 36e5)
         },
         methods: {
             initWebIntents() {
